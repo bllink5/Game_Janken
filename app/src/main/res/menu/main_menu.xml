@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainMenuFragment"
+        android:icon="@drawable/gradient_home"
+        android:title="Main" />
+
+    <item
+        android:id="@+id/menuHistoryFragment"
+        android:icon="@drawable/gradient_history"
+        android:title="History" />
+
+    <item
+        android:id="@+id/shopFragment"
+        android:icon="@drawable/gradient_shop"
+        android:title="Shop" />
+
+    <item
+        android:id="@+id/friendFragment"
+        android:icon="@drawable/gradient_add"
+        android:title="Friend" />
+
+
+</menu>

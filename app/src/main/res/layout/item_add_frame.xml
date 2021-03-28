@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shadow_draw">
+
+    <TextView
+        android:id="@+id/tv_title_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="Frame Keren 1"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_item_frame"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_frame"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/frame_picture" />
+
+    <Button
+        android:id="@+id/btn_gunakan_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_background_btn"
+        android:fontFamily="@font/monolog_bold"
+        android:text="Gunakan"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_digunakan_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_background_btn_used"
+        android:clickable="false"
+        android:fontFamily="@font/monolog_bold"
+        android:text="Digunakan"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

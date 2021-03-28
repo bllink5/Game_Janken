@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu_nav"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.jankenteamb.ui.menu.mainMenu.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
+    <fragment
+        android:id="@+id/menuHistoryFragment"
+        android:name="com.example.jankenteamb.ui.menu.history.MenuHistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.jankenteamb.ui.menu.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.jankenteamb.ui.menu.friend.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" />
+</navigation>

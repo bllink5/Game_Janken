@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_profile_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="@string/back_button" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_background_main"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/logout"
+        android:textColor="@color/primaryWhite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clProfilePict"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            android:contentDescription="@string/profile_picture" />
+
+        <ImageView
+            android:id="@+id/iv_frame_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/frame_profile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/dummy_win"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tv_lose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/dummy_lose"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tv_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/dummy_draw"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/win_titik_dua"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_win"
+        app:layout_constraintTop_toTopOf="@+id/tv_win" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/lose_titik_dua"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/clProfilePict"
+        app:layout_constraintStart_toStartOf="@+id/clProfilePict"
+        app:layout_constraintTop_toBottomOf="@+id/clProfilePict" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/draw_titik_dua"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/level"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/tv_level_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/dummy_level"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <ProgressBar
+        android:id="@+id/pb_xp_status"
+        style="@style/CustomProgressBarHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:progress="30"
+        android:progressBackgroundTint="@color/bg_progressbar"
+        android:progressTint="@color/bg_btn"
+        app:layout_constraintEnd_toEndOf="@+id/tv_draw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/info_personal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_xp_status" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/monolog_semi_bold"
+        android:text="@string/prompt_email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/monolog_semi_bold"
+        android:text="@string/username"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email_label" />
+
+    <TextView
+        android:id="@+id/tv_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monolog_regular"
+        android:text="@string/username"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/tv_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/monolog_regular"
+        android:text="@string/email_email_com"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#9A9999"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_xp_status" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#9A9999"
+        app:layout_constraintBottom_toTopOf="@+id/tv_experience_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username_label" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_experience_log"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_experience_title" />
+
+    <TextView
+        android:id="@+id/tv_experience_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/top_score"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_username_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username_label" />
+
+    <ImageView
+        android:id="@+id/iv_download_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_cloud_download_24"
+        app:layout_constraintBottom_toBottomOf="@id/tv_experience_title"
+        app:layout_constraintEnd_toEndOf="@+id/rv_experience_log"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_experience_title"
+        android:contentDescription="@string/download_button_pdf" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/pb_top_score"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_experience_log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/loading_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

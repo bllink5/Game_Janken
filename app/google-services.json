@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "81938025462",
+    "firebase_url": "https://janken-tim-b.firebaseio.com",
+    "project_id": "janken-tim-b",
+    "storage_bucket": "janken-tim-b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81938025462:android:7e49c76904c9e2f54b15d7",
+        "android_client_info": {
+          "package_name": "com.example.jankenteamb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81938025462-v7em1p31pc7gr2rqu33i18k3f2hi9saq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jankenteamb",
+            "certificate_hash": "75ff0dd1d823eeef10cc6ed38e881088c8c7bf76"
+          }
+        },
+        {
+          "client_id": "81938025462-s1k7ouc86kj9dhtg8q37nrq4qogd7c58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbE-7Uiwa46mMaJ_Rcki85-AQgQteRzSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81938025462-s1k7ouc86kj9dhtg8q37nrq4qogd7c58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

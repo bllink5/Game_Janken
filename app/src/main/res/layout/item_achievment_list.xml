@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/shadow_draw">
+
+    <ImageView
+        android:id="@+id/iv_title_achivement"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_achievement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_title_achievment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/dummy_achievement_title"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_title_achivement"
+        app:layout_constraintStart_toEndOf="@+id/iv_title_achivement"
+        app:layout_constraintTop_toTopOf="@+id/iv_title_achivement" />
+
+    <ProgressBar
+        android:id="@+id/pb_achievment"
+        style="@style/CustomProgressBarHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progress="30"
+        android:progressBackgroundTint="@color/bg_progressbar"
+        android:progressTint="@color/bg_btn"
+        app:layout_constraintStart_toStartOf="@+id/iv_title_achivement"
+        app:layout_constraintTop_toBottomOf="@+id/iv_title_achivement" />
+
+    <Button
+        android:id="@+id/btn_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background_main"
+        android:fontFamily="@font/monolog_semi_bold"
+        android:text="@string/claim"
+        android:textColor="@color/primaryWhite"
+        app:layout_constraintBottom_toTopOf="@id/tv_coin_achievment"
+        app:layout_constraintEnd_toEndOf="@+id/tv_coin_achievment"
+        app:layout_constraintStart_toStartOf="@id/iv_coin_achievment"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pb_achievment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/monolog_regular"
+        android:text="Level 1"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pb_achievment"
+        app:layout_constraintTop_toBottomOf="@+id/pb_achievment" />
+
+    <ImageView
+        android:id="@+id/iv_coin_achievment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/logo_point"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_coin_achievment"
+        app:srcCompat="@drawable/ic_poin" />
+
+    <TextView
+        android:id="@+id/tv_coin_achievment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/monolog_regular"
+        android:text="+ 150"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

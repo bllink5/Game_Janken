@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bg_btn">#6921AC</color>
+    <color name="bg_progressbar">#B8D0F0</color>
+    <color name="primaryGreen">#099A97</color>
+    <color name="primaryPurple">#7546A1</color>
+    <color name="primaryWhite">#FFFFFF</color>
+    <color name="primaryBlack">#222828</color>
+    
+</resources>

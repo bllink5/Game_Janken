@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.menu.mainMenu.MainMenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shadow_draw"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_photo_main"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_user_outlined"
+            android:contentDescription="@string/profile_picture" />
+
+        <TextView
+            android:id="@+id/tv_username_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/monolog_bold"
+            android:text="@string/username"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_photo_main"
+            app:layout_constraintTop_toTopOf="@+id/iv_photo_main"
+            app:layout_constraintBottom_toTopOf="@id/tv_level_text"/>
+
+        <TextView
+            android:id="@+id/tv_level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/monolog_regular"
+            android:text="@string/level_titik_dua"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_photo_main"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username_main"
+            app:layout_constraintBottom_toTopOf="@id/pb_level_main"/>
+
+        <TextView
+            android:id="@+id/tv_level_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monolog_regular"
+            android:text="@string/level"
+            android:textSize="15sp"
+            app:layout_constraintTop_toTopOf="@+id/tv_level_text"
+            app:layout_constraintLeft_toRightOf="@id/tv_level_text"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_level_text" />
+
+        <ProgressBar
+            android:id="@+id/pb_level_main"
+            style="@style/CustomProgressBarHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:progressBackgroundTint="@color/bg_progressbar"
+            android:progressTint="@color/bg_btn"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_username_main"
+            app:layout_constraintTop_toBottomOf="@+id/tv_level_main" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/iv_achievment_main"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/achievement_icon"
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/logo_achievement" />
+
+    <TextView
+        android:id="@+id/tv_achievment_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/achievement"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_achievment_main"
+        app:layout_constraintStart_toEndOf="@+id/iv_achievment_main"
+        app:layout_constraintTop_toTopOf="@+id/iv_achievment_main" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iv_singleplayer_main"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_singleplayer_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_achievment_main"
+        app:lottie_autoPlay="true"
+        app:lottie_imageAssetsFolder="images/single"
+        app:lottie_rawRes="@raw/menu_single" />
+
+    <TextView
+        android:id="@+id/tv_singleplayer_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/single_player"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_multiplayer_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_singleplayer_main" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iv_multiplayer_main"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_multiplayer_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_singleplayer_main"
+        app:lottie_autoPlay="true"
+        app:lottie_imageAssetsFolder="images/multi"
+        app:lottie_rawRes="@raw/menu_multi" />
+
+
+    <TextView
+        android:id="@+id/tv_multiplayer_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="@string/multi_player"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_info_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_multiplayer_main" />
+
+    <TextView
+        android:id="@+id/tv_info_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/monolog_regular"
+        android:text="@string/tingkatkan_levelmu_dengan_nmengumpulkan_experience"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_multiplayer_main" />
+</androidx.constraintlayout.widget.ConstraintLayout>

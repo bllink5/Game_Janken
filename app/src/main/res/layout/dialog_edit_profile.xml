@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/edit_profile"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/monolog_black"
+        android:text="@string/username"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monolog_black"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textSize="12sp"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_background_main"
+        android:text="@string/update_caps" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_background_main"
+        android:text="@string/cancel_caps" />
+
+
+</LinearLayout>

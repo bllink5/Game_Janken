@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shadow_draw"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/monolog_bold"
+        android:text="Frame Keren 1"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_item_frame"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_frame"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/frame_picture" />
+
+    <TextView
+        android:id="@+id/tv_price_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/monolog_regular"
+        android:text="40"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_icon_frame" />
+
+    <ImageView
+        android:id="@+id/iv_icon_frame"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_beli_frame"
+        app:layout_constraintStart_toEndOf="@+id/tv_price_frame"
+        app:layout_constraintTop_toBottomOf="@+id/iv_item_frame"
+        app:srcCompat="@drawable/ic_poin"
+        android:contentDescription="@string/logo_point" />
+
+    <Button
+        android:id="@+id/btn_beli_frame"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_background_btn"
+        android:fontFamily="@font/monolog_bold"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="BUY"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_item_frame" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.menu.history.MenuHistoryFragment">
+
+
+    <TextView
+        android:id="@+id/tv_history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/monolog_black"
+        android:gravity="center_horizontal"
+        android:text="@string/history_battle"
+        android:textSize="24sp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/tv_history_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/history_kosong"
+            android:textSize="26sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_history" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/pb_history"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/loading_icon" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

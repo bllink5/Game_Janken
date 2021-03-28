@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.UploadFotoGunakanFrameActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_update_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_upload_photo"
+            android:layout_width="124dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24"
+            android:contentDescription="@string/profile_picture" />
+
+        <ImageView
+            android:id="@+id/iv_frame_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/frame_profile" />
+
+        <ImageView
+            android:id="@+id/iv_pick_profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/pick_profile_pict"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:contentDescription="@string/choose_photo_profile" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_main"
+        android:fontFamily="@font/monolog_bold"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/upload_foto_caps"
+        android:visibility="gone"
+        android:textColor="@android:color/primary_text_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_update_profile" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_daftar_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_update_profile">
+
+        <ImageView
+            android:id="@+id/iv_empty_frame"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty_image"
+            android:src="@drawable/empty_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_empty_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monolog_bold"
+            android:text="@string/empty_frame"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_empty_frame"
+            app:layout_constraintEnd_toEndOf="@+id/iv_empty_frame"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iv_empty_frame"
+            app:layout_constraintTop_toTopOf="@+id/iv_empty_frame"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_add_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/monolog_bold"
+            android:text="@string/daftar_frame_caps"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="@string/back_button" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/pb_frame_list"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/loading_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
